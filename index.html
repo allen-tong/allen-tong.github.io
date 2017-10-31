@@ -1,22 +1,91 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Allen's personal website.">
   <title>Allen Tong</title>
+  <link rel="icon" href="img/common/Allen-Tong.jpg">
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+  <!--<![endif]-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/marketing.css">
+  <!--<![endif]-->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
 </head>
+
 <body>
-  <p>Nothing to see here (yet). Check back later!</p>
-  <p>
-    For now, enjoy a few of my favorite songs:<br/>
-    <a href="https://www.youtube.com/watch?v=yymS1Pb7JfM">I See Fire - Peter Hollens</a><br/>
-    <a href="https://www.youtube.com/watch?v=u6C2N2t4NXE">I Need Your Love - Pentatonix</a><br/>
-    <a href="https://www.youtube.com/watch?v=ulr0muQKjk0">11:11 - Taeyeon</a><br/>
-    <a href="https://www.youtube.com/watch?v=9DwzBICPhdM">Not Today - BTS</a><br/>
-    <a href="https://www.youtube.com/watch?v=_dK2tDK9grQ">Shape of You - Ed Sheeran</a><br/>
-    <a href="https://www.youtube.com/watch?v=Em7vc8NWUNY">Scars to Your Beautiful - Alessia Cara</a><br/>
-    <a href="https://www.youtube.com/watch?v=qQkBeOisNM0">Some Nights - fun.</a><br/>
-    <a href="https://www.youtube.com/watch?v=iEJ98tpHNRs">Why Try - Forte feat. Kirstin Maldonado</a><br/>
-    <a href="https://www.youtube.com/watch?v=qIt6KCwlFPw">Wedding Dress - Taeyang</a><br/>
-    <a href="https://www.youtube.com/watch?v=HtNS1afUOnE">Stop and Stare - OneRepublic</a>
-  </p>
+  <div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+      <a class="pure-menu-heading" href="index.html">
+        <img width="20" alt="Allen Tong" class="pure-img-responsive" src="img/common/Allen-Tong.jpg">&nbsp;
+        Allen Tong
+      </a>
+
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="index.html" class="pure-menu-link">Home</a></li>
+        <li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
+        <li class="pure-menu-item"><a href="projects.html" class="pure-menu-link">Projects</a></li>
+        <li class="pure-menu-item"><a href="cs61b.html" class="pure-menu-link">CS 61B</a></li>
+        <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="splash-container">
+    <div class="splash">
+      <h1 class="splash-head">Allen Tong</h1>
+      <p class="splash-subhead">Welcome to my website! Feel free to poke around.</p>
+      <p><a href="#about" class="pure-button pure-button-primary">About me</a></p>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div id="about">
+      <div class="content">
+        <br/>
+        <h1>About me</h1>
+        <img width="300" alt="Allen Tong" class="pure-img-responsive" src="img/common/Allen-Tong.jpg">
+        <p>
+          Hey! I'm Allen, a second-year computer science major at UC Berkeley.<br/>
+          Aside from CS, I also enjoy listening to music, hiking, fencing, playing video games, and browsing dank memes.<br/>
+          I also love learning about behavioral and personality psychology.<br/>
+          If you're a student and see me on campus, reach out and say hi!
+        </p><br/>
+        <h2>CS 61B</h2>
+        <p>I'm currently a course tutor for <a href="http://inst.eecs.berkeley.edu/~cs61b/fa17/index.html">CS 61B: Data Structures</a> (Fall 2017).</p><br/>
+        <h2>Fencing</h2>
+        <p>I'm a member of the Cal Fencing Team. <a href="https://fencing.berkeley.edu/index.html">Join us!</a></p><br/>
+        <h2>Music</h2>
+        <p>
+          I love music. Here are a few of my favorite songs and music videos:<br/>
+          <a href="https://www.youtube.com/watch?v=yymS1Pb7JfM">I See Fire - Peter Hollens</a><br/>
+          <a href="https://www.youtube.com/watch?v=u6C2N2t4NXE">I Need Your Love - Pentatonix</a><br/>
+          <a href="https://www.youtube.com/watch?v=ulr0muQKjk0">11:11 - Taeyeon</a><br/>
+          <a href="https://www.youtube.com/watch?v=9DwzBICPhdM">Not Today - BTS</a><br/>
+          <a href="https://www.youtube.com/watch?v=_dK2tDK9grQ">Shape of You - Ed Sheeran</a><br/>
+          <a href="https://www.youtube.com/watch?v=Em7vc8NWUNY">Scars to Your Beautiful - Alessia Cara</a><br/>
+          <a href="https://www.youtube.com/watch?v=qQkBeOisNM0">Some Nights - fun.</a><br/>
+          <a href="https://www.youtube.com/watch?v=iEJ98tpHNRs">Why Try - Forte feat. Kirstin Maldonado</a><br/>
+          <a href="https://www.youtube.com/watch?v=qIt6KCwlFPw">Wedding Dress - Taeyang</a><br/>
+          <a href="https://www.youtube.com/watch?v=HtNS1afUOnE">Stop and Stare - OneRepublic</a>
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
