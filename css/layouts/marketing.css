@@ -79,7 +79,7 @@ label {
 
 a.pure-button-primary {
     background: white;
-    color: #1f8dd6;
+    color: #000080;
     border-radius: 5px;
     font-size: 120%;
 }
@@ -132,7 +132,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: #003399;
+    background: #000080;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
