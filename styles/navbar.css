@@ -1,0 +1,114 @@
+/* Navbar styles */
+
+.navbar {
+  background: navy;
+  line-height: 1.5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar a {
+  border: .15em solid navy;
+  border-radius: .5em;
+  color: white;
+  display: block;
+  padding: .75em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: navy;
+  background: whitesmoke;
+}
+
+.navbar img {
+  height: 1em;
+  width: auto;
+}
+
+.navbar-start {
+  float: left;
+  padding: .25em;
+}
+
+.navbar-end {
+  float: right;
+  padding: .25em;
+}
+
+.navbar-menu a {
+  float: left;
+}
+
+/* Hamburger menu icon styles */
+
+.navbar-hamburger {
+  display: block;
+  height: 3.2em;
+}
+
+.navbar-hamburger a {
+  float: right;
+}
+
+.navbar-end.active .navbar-hamburger a {
+  background: whitesmoke;
+}
+
+.hamburger {
+  border-bottom: .2em solid white;
+  border-top: .2em solid white;
+  display: block;
+  height: 1em;
+  position: relative;
+  width: 1.5em;
+}
+
+.hamburger::before {
+  border-top:.2em solid white;
+  content: "";
+  left: 0;
+  position: absolute;
+  top: .4em;
+  width: 100%;
+}
+
+.navbar-hamburger a:hover .hamburger,
+.navbar-hamburger a:hover .hamburger::before,
+.navbar-end.active .hamburger,
+.navbar-end.active .hamburger::before {
+  border-bottom-color: navy;
+  border-top-color: navy;
+}
+
+/* For smaller screens: show hamburger icon and drop-down menu */
+
+@media (max-width: 600px) {
+  .navbar-menu {
+    background-color: navy;
+    box-shadow: -.25em .25em .25em 0 rgba(0, 0, 0, .25);
+    display: none;
+    padding: .25em;
+    position: absolute;
+    right: 0;
+  }
+
+  .navbar-end.active .navbar-menu {
+    display: initial;
+  }
+
+  .navbar-menu a {
+    float: none;
+  }
+}
+
+/* For larger screens: show full horizontal navbar and hide hamburger icon */
+
+@media (min-width: 600px) {
+  .navbar-hamburger {
+    display: none;
+  }
+}

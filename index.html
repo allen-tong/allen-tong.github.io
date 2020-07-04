@@ -2,107 +2,57 @@
 <html lang="en">
 
 <head>
+  <title>Allen Tong</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Allen's personal website.">
-  <title>Allen Tong</title>
-  <link rel="icon" href="img/common/star.png">
 
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-  <!--[if lte IE 8]>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-  <!--<![endif]-->
-  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-  <!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="css/layouts/marketing.css">
-  <!--<![endif]-->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/smoothscroll.js"></script>
+  <link rel="icon" href="images/star.png">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-  <div class="header">
-    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-      <a class="pure-menu-heading" href="index.html">
-        <img width="20" alt="Allen Tong" class="pure-img-responsive" src="img/common/circled_star.png">&nbsp;
-        Allen Tong
-      </a>
+  <script src="scripts/navbar.js"></script>
 
-      <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="index.html" class="pure-menu-link">Home</a></li>
-        <li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
-        <li class="pure-menu-item"><a href="projects.html" class="pure-menu-link">Projects</a></li>
-        <li class="pure-menu-item"><a href="cs61b.html" class="pure-menu-link">CS 61B</a></li>
-        <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="splash-container">
-    <div class="splash">
+  <div class="splash">
+    <div class="splash-content">
       <h1 class="splash-head">Allen Tong</h1>
       <p class="splash-subhead">Welcome to my website! Feel free to poke around.</p>
-      <p><a href="#about" class="pure-button pure-button-primary">About me</a></p>
+      <p><a class="splash-button" href="#about">About me</a></p>
     </div>
   </div>
 
-  <div class="content-wrapper">
-    <div id="about">
-      <div class="content">
-        <br/>
-        <h1>About me</h1>
-        <img width="300" alt="Allen Tong" class="pure-img-responsive" src="img/common/Allen-Tong.jpg">
-        <p>
-          Hey! I'm Allen, a fourth-year computer science major at UC Berkeley.<br/>
-          I'm particularly interested in the areas of cybersecurity and privacy.<br/>
-          Aside from CS, I enjoy listening to music, fencing, playing
+  <div class="main">
+    <div id="about" class="main-content">
+      <img id="headshot" src="images/allentong.jpg" alt="Allen Tong">
+      <p id="intro">
+        Hey! I'm Allen.<br>
+        I recently graduated from UC Berkeley with a bachelor's degree in computer science.<br>
+        I am currently working as a software engineer at PayPal.<br>
+        <br>
+        My technical interests are in the areas of cybersecurity and privacy.<br>
+        I also love learning about cognitive, social, and personality psychology.<br>
+        In my free time, I enjoy listening to music, playing
             <a href="https://www.youtube.com/watch?v=Ro6r15wzp2o">video</a>
-            <a href="https://www.youtube.com/watch?v=8fwwGCr1-po">games</a>, and browsing dank memes.<br/>
-          I also love learning about cognitive, social, and personality psychology.<br/>
-          Feel free to reach out and say hi!
-        </p><br/>
-        <h1>Organizations</h1>
-        <h2>BLUES</h2>
-        <p>
-          I'm currently assisting with research at the <a href="https://blues.cs.berkeley.edu/">Berkeley Laboratory for Usable and Experimental Security.</a><br/>
-          <a href="https://content.sciendo.com/view/journals/popets/2019/4/article-p250.xml">Here</a> is a study that I previously worked on!
-        </p>
-        <h2>ΥΠΕ</h2>
-        <p>I'm a member of Upsilon Pi Epsilon, Nu Chapter. <a href="https://upe.cs.berkeley.edu/">Learn more about UPE at UC Berkeley.</a></p>
-        <h2>Cal Fencing Club</h2>
-        <p>Fencing is fun! <a href="https://fencing.berkeley.edu/index.html">Join us!</a></p><br/>
-        <h1>Music</h1>
-        <p>
-          I love music. Here are a few of my favorite songs and music videos:<br/>
-          <a href="https://www.youtube.com/watch?v=yymS1Pb7JfM">I See Fire - Peter Hollens</a><br/>
-          <a href="https://www.youtube.com/watch?v=ZhRvd0bzIoE">Something 'Bout Love - David Archuleta</a><br/>
-          <a href="https://www.youtube.com/watch?v=NHXUM-6a3dU">Fine - Taeyeon</a><br/>
-          <a href="https://www.youtube.com/watch?v=RgKAFK5djSk">See You Again - Wiz Khalifa feat. Charlie Puth</a><br/>
-          <a href="https://www.youtube.com/watch?v=MBdVXkSdhwU">DNA - BTS</a><br/>
-          <a href="https://www.youtube.com/watch?v=AgFeZr5ptV8">22 - Taylor Swift</a><br/>
-          <a href="https://www.youtube.com/watch?v=gdVjVtpr55M">The Sound of Silence - Pentatonix</a><br/>
-          <a href="https://www.youtube.com/watch?v=xo1VInw-SKc">Fight Song - Rachel Platten</a><br/>
-          <a href="https://www.youtube.com/watch?v=LsSZbRReWNY">Be as ONE - Twice</a><br/>
-          <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8">Shape of You - Ed Sheeran</a><br/>
-          <a href="https://www.youtube.com/watch?v=zEkg4GBQumc">Don't Wanna Cry - Seventeen</a><br/>
-          <a href="https://www.youtube.com/watch?v=qQkBeOisNM0">Some Nights - fun.</a><br/>
-          <a href="https://www.youtube.com/watch?v=iEJ98tpHNRs">Why Try - Forte feat. Kirstin Maldonado</a><br/>
-          <a href="https://www.youtube.com/watch?v=hT_nvWreIhg">Counting Stars - OneRepublic</a><br/>
-          <a href="https://www.youtube.com/watch?v=9xWiro_tS1k">One of These Nights - Red Velvet</a><br/>
-          <a href="https://www.youtube.com/watch?v=MWASeaYuHZo">Scars to Your Beautiful - Alessia Cara</a><br/>
-          <a href="https://www.youtube.com/watch?v=qIt6KCwlFPw">Wedding Dress - Taeyang</a><br/>
-          <a href="https://www.youtube.com/watch?v=NmugSMBh_iI">Maps - Maroon 5</a><br/>
-          <a href="https://www.youtube.com/watch?v=U85U3dPuiR4">Rise - Superfruit feat. Mary Lambert, Brian Justin Crum, Mario Jose</a><br/>
-          <a href="https://www.youtube.com/watch?v=mWRsgZuwf_8">Demons - Imagine Dragons</a><br/>
-        </p>
-      </div>
+            <a href="https://www.youtube.com/watch?v=8fwwGCr1-po">games</a>,
+            and browsing dank memes.<br>
+        Feel free to reach out and say hi!
+      </p><br>
+      <h1>Organizations</h1>
+      <h2>BLUES</h2>
+      <p>
+        I previously assisted with research at the
+            <a href="https://blues.cs.berkeley.edu/">Berkeley Laboratory for Usable and Experimental Security.</a><br>
+        <a href="https://content.sciendo.com/view/journals/popets/2019/4/article-p250.xml">Here</a>
+            is a study that I contributed to, which received the
+            <a href="https://fpf.org/2019/12/05/this-years-must-read-privacy-papers-fpf-announces-recipients-of-annual-award/">
+            10th Annual Privacy Papers for Policymakers Student Paper Award</a>!
+      </p>
+      <h2>ΥΠΕ</h2>
+      <p>I'm a member of Upsilon Pi Epsilon, Nu Chapter. <a href="https://upe.cs.berkeley.edu/">Learn more about UPE at UC Berkeley.</a></p>
+      <h2>Cal Fencing Club</h2>
+      <p>Fencing is fun! <a href="https://fencing.berkeley.edu/index.html">Join us!</a></p><br>
     </div>
   </div>
 </body>
